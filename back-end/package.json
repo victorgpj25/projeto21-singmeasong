@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/server.ts",
+    "test:integrations": "dotenv -e .env.test jest -- -i --coverage --testPathPattern=tests/integrations",
     "test:unit": "dotenv -e .env.test jest -- -i --coverage --testPathPattern=tests/unit"
   },
   "keywords": [],
